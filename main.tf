@@ -85,7 +85,7 @@ resource "aws_instance" "k8s_master" {
 resource "aws_instance" "k8s_node1" {
   ami                         = "ami-0f5ee92e2d63afc18"
   instance_type               = "t2.medium"
-  key_name                    = "k8s"
+  key_name                    = "jenkins-master"
   subnet_id                   = aws_subnet.k8s_subnet.id
   vpc_security_group_ids      = [aws_security_group.k8s_sg.id]
   associate_public_ip_address = true
