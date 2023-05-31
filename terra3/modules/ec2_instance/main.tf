@@ -28,9 +28,9 @@ associate_public_ip_address = true
 
 
 
-#output "ec2_instance_id" {
-# value = aws_instance.k8s_master.id
-#}
+output "ec2_instance_id" {
+ value = aws_instance.k8s_master.id
+}
 
 
 resource "aws_instance" "k8s_node1" {
