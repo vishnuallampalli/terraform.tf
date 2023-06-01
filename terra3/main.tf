@@ -21,5 +21,5 @@ module "ec2_instance" {
  subnet_id = module.vpc_subnet_nsg.subnet_id
  security_group_id = module.vpc_subnet_nsg.security_group_id
  instance_type = "t2.medium"
- ami = "ami-ami-0f5ee92e2d63afc18"
+ ami = "ami-0f5ee92e2d63afc18"
 }
