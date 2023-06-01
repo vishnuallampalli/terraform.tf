@@ -28,13 +28,13 @@
 
    - name: install kubelet
      apt:
-       name: kubelet=v1.27.2
+       name: kubelet=1.27.2
        state: present
        update_cache: true
 
    - name: install kubeadm
      apt:
-       name: kubeadm=v1.27.2
+       name: kubeadm=1.27.2
        state: present
 
 - hosts: k8s_master
@@ -42,7 +42,7 @@
   tasks:
    - name: install kubectl
      apt:
-       name: kubectl=v1.27.2
+       name: kubectl=1.27.2
        state: present
        force: yes
 
